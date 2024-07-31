@@ -1,0 +1,6 @@
+locations:
+- build:
+    directory: ./dagster_jaffle_shop
+  code_source:
+    module_name: dagster_jaffle_shop.definitions
+  location_name: dagster_jaffle_shop
