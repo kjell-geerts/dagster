@@ -5,9 +5,8 @@ default:
       type: snowflake
       account: gd42333.eu-north-1.aws
       user: "{{env_var('DBT_SNOWFLAKE_USER')}}"
+      password: "{{env_var('DBT_SNOWFLAKE_PASSWORD')}}"
       role: "{{env_var('DBT_SNOWFLAKE_ROLE')}}"
       database: SBX_KJELLGEERTS
       warehouse: WH_ENGINEER
       schema: "{{env_var('DBT_SNOWFLAKE_SCHEMA')}}"
-      authenticator: externalbrowser
-      reuse_connections: True
